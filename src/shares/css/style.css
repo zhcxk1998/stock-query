@@ -1,0 +1,70 @@
+.root {
+    -fx-background-image: url('../img/background.jpg');
+}
+
+.table-view {
+    -fx-opacity: 0.9;
+    -fx-border-radius: 16px;
+    -fx-background-radius: 16px;
+    -fx-effect: dropshadow(three-pass-box, #fa4b2a, 10, 0, 0, 0);
+
+}
+
+.table-view .column-header {
+    -fx-border-color: #fa4b2a white #fa4b2a white;
+    -fx-font-size: 16px;
+    -fx-background-color: rgba(250, 75, 42, 0.2);
+    -fx-font-weight: bold;
+}
+
+.table-cell {
+    -fx-font-size: 16px;
+    -fx-text-fill: #fa4b2a;
+    -fx-font-weight: bold;
+    -fx-border-color: white;
+    -fx-alignment: center;
+}
+
+.table-view > .virtual-flow > .scroll-bar:horizontal {
+    -fx-opacity: 0;
+}
+
+.text-field {
+    -fx-opacity: 0.9;
+    -fx-background-color: white;
+    -fx-border-radius: 16px;
+    -fx-background-radius: 16px;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(three-pass-box, #fa4b2a, 10, 0, 0, 0);
+}
+
+.text-field:focused {
+    -fx-border-color: #fa4b2a;
+}
+
+.button {
+    -fx-background-color: white;
+    -fx-opacity: 0.9;
+    -fx-border-radius: 16px;
+    -fx-background-radius: 16px;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(three-pass-box, #fa4b2a, 10, 0, 0, 0);
+}
+
+#title {
+    -fx-effect: dropshadow(three-pass-box, #fa4b2a, 10, 0, 0, 0);
+}
+
+#transactionNumber {
+    -fx-font-size: 15px;
+}
+
+#transactionMoney {
+    -fx-font-size: 15px;
+}
+
+#date {
+    -fx-font-size: 15px;
+}

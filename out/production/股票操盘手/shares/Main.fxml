@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="shares.MainController">
+    <children>
+        <TableView fx:id="Stock_tableview" focusTraversable="false" layoutX="86.0" layoutY="315.0" mouseTransparent="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="385.0" prefWidth="1026.0">
+            <columns>
+                <TableColumn fx:id="name" minWidth="5.0" prefWidth="131.0" text="股票名称" />
+                <TableColumn fx:id="openPrice" editable="false" minWidth="0.0" prefWidth="0.0" sortType="DESCENDING" text="开盘价" />
+                <TableColumn fx:id="closePrice" editable="false" minWidth="0.0" prefWidth="12.0" text="收盘价" />
+                <TableColumn fx:id="nowPrice" editable="false" minWidth="0.0" prefWidth="0.0" text="当前价格" />
+                <TableColumn fx:id="highestPrice" editable="false" minWidth="0.0" prefWidth="166.0" text="最高价" />
+                <TableColumn fx:id="lowestPrice" editable="false" minWidth="0.0" prefWidth="75.0" text="最低价" />
+                <TableColumn fx:id="bidPrice" editable="false" minWidth="0.0" prefWidth="75.0" text="竞买价" />
+                <TableColumn fx:id="auctionPrice" editable="false" minWidth="0.0" prefWidth="75.0" text="竞卖价" />
+                <TableColumn id="transactionNumber" fx:id="transactionNumber" editable="false" prefWidth="141.0" text="成交数" />
+                <TableColumn id="transactionMoney" fx:id="transactionMoney" editable="false" minWidth="16.0" prefWidth="69.0" text="成交金额" />
+
+                <TableColumn id="date" fx:id="Date" editable="false" minWidth="26.0" prefWidth="75.0" text="日期" />
+                <TableColumn fx:id="Date_time" editable="false" minWidth="5.0" prefWidth="75.0" text="时间" />
+            </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+        </TableView>
+        <TextField fx:id="Stock_textfield" layoutX="88.0" layoutY="209.0" onAction="#setTableview_data" prefHeight="71.0" prefWidth="743.0" promptText="（输入股票名称，多个股票用“，“隔开””）" />
+      <Button layoutX="912.0" layoutY="209.0" mnemonicParsing="false" onAction="#setTableview_data" prefHeight="71.0" prefWidth="200.0" text="开 始 查 询" />
+      <Label id="title" layoutX="86.0" layoutY="66.0" text="震惊北师の炒股大王高高手">
+         <font>
+            <Font name="System Bold" size="62.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.4878048780487805">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="#d3c9c9" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+    </children>
+</AnchorPane>
